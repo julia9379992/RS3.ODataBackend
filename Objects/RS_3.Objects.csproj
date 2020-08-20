@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DDDDF64-E535-4045-8494-716F9859095F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IIS.RS_3</RootNamespace>
+    <AssemblyName>RS_3.Objects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin/Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin/Debug\RS_3.Objects.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin/Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin/Release\RS_3.Objects.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/log4net.2.0.3/lib/net40-client/log4net">
+      <HintPath>../packages/log4net.2.0.3/lib/net40-client/log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.LogService.1.1.0/lib/net45/LogService">
+      <HintPath>../packages/NewPlatform.Flexberry.LogService.1.1.0/lib/net45/LogService.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/Npgsql.3.0.8/lib/net45/Npgsql">
+      <HintPath>../packages/Npgsql.3.0.8/lib/net45/Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/Remotion.Linq.1.15.2.0/lib/net45/Remotion.Linq">
+      <HintPath>../packages/Remotion.Linq.1.15.2.0/lib/net45/Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/SharpZipLib.0.86.0/lib/20/ICSharpCode.SharpZipLib">
+      <HintPath>../packages/SharpZipLib.0.86.0/lib/20/ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/Oracle.ManagedDataAccess.12.1.022/lib/net40/Oracle.ManagedDataAccess">
+      <HintPath>../packages/Oracle.ManagedDataAccess.12.1.022/lib/net40/Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/Unity.Abstractions.3.3.0/lib/net45/Unity.Abstractions">
+      <HintPath>../packages/Unity.Abstractions.3.3.0/lib/net45/Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/Unity.Configuration.5.2.2/lib/net45/Unity.Configuration">
+      <HintPath>../packages/Unity.Configuration.5.2.2/lib/net45/Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/Unity.Container.5.8.6/lib/net45/Unity.Container">
+      <HintPath>../packages/Unity.Container.5.8.6/lib/net45/Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/Microsoft.Spatial.6.15.0/lib/portable-net45+win+wpa81/Microsoft.Spatial">
+      <HintPath>../packages/Microsoft.Spatial.6.15.0/lib/portable-net45+win+wpa81/Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ChangesToSqlBTMonitor">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ChangesToSqlBTMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.Services.CurrentUserService">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.Services.CurrentUserService.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ExternalLangDef">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ExternalLangDef.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.DRDataService">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.DRDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.LINQProvider">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.LINQProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.LockService">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.LockService.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.MSSQLDataService">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.MSSQLDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.ODBCDataService">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.ODBCDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.OracleDataService">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.OracleDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.PostgresDataService">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Business.PostgresDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Collections">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.DataObject">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.DataObject.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.FunctionalLanguage">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.FunctionalLanguage.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Tools">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.UserDataTypes">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.STORMNET.UserDataTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.Services.UnityFactory">
+      <HintPath>../packages/NewPlatform.Flexberry.ORM.5.0.2/lib/net45/ICSSoft.Services.UnityFactory.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ОбъектСтроит.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="РазрешНаСтроит.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tВидРазрешения.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ЗастройщОрг.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Организация.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties/AssemblyInfo.cs" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
